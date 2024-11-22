@@ -11,7 +11,7 @@ fetch("https://dummyjson.com/recipes")
     let hola = "hola"
     recipeList.style.display = "flex"
     recipeList.style.flexWrap = "wrap"
-    recipeList.style.justifyContent = "space-evenly"
+    recipeList.style.justifyContent = "center"
 
     for (let i = 0; i < recipes.length; i++) {
       recipe += `

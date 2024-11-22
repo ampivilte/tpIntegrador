@@ -79,11 +79,14 @@ article p {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .form-busqueda input {
   width: 70vw;
   padding-left: 10px;
+  height: 40px;
 }
 
 .form-busqueda article img {
@@ -96,21 +99,13 @@ article p {
   color: white;
   margin-bottom: 30px;
   background-color: #AAD1D7;
-
-}
-
-
-
-.products {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  height: 60px;
+  text-align: center;
 }
 
 .receta {
   text-align: center;
-  max-width: 200px;
+  width: 18%;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 40px;
@@ -164,270 +159,4 @@ article p {
 .footer article ul li {
   color: white;
   text-align: left;
-}
-
-
-.boxed {
-  max-width: 100%;
-  margin-top: 0 auto;
-  padding: 20px;
-}
-  
-.grids {
-  display: flex;
-  flex-wrap: wrap; /*cada elemento debe teener un width*/
-  justify-content: space-around;
-  padding: 30px 20px  ; /*arriba y abaajo, a los costaods*/
-}
-
-.grids article {
-  width: 25%;
-  border: 1px solid black;
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: column; /*para que me quede el nombre y  la imágen centrada*/
-  justify-content: center;
-  align-items: center;
-  padding: 10px 0 15px;
-}
-
-.grids article img {
-  width: 60%;
-}
-
-
-article img,
-article h1,
-article p,
-article h2 {
-  margin-bottom: 10px; /* Ajusta el valor según el espacio que desees */
-}
-
-article p {
-  color: rgba(181, 181, 181, 0,1);
-}
-
-.grids a {
-  padding: 7px 7px ;
-  background-color: black;
-  color: white;
-  text-decoration: none;
-}
-
-
-.grids2 {
-  display: flex;
-  flex-wrap: wrap; /*cada elemento debe teener un width*/
-  justify-content: space-around;
-  padding: 30px 20px  ; /*arriba y abaajo, a los costaods*/
-}
-
-.grids2 article {
-  width: 25%;
-  border: 1px solid black;
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: column; /*para que me quede el nombre y  la imágen centrada*/
-  justify-content: center;
-  align-items: center;
-  padding: 10px 0 15px;
-}
-
-.grids2 article img {
-  width: 60%;
-}
-
-.grids2 a {
-  padding: 7px 7px ;
-  background-color: black;
-  color: white;
-  text-decoration: none;
-}
-
-
-/*
-
-
-/*
-footer {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 20px;
-  gap: 20px;
-  max-width: 100%;
-  border-top: 1px solid #ffffff;
-  background-color: black;
-}
-
-Estilo para cada sección 
-footer section img {
-  flex: 1;
-  margin: 0 10px;
-  border: 1px solid rgb(255, 255, 255);
-  max-width: 30%;
-  border-left: 1px;
-  border-bottom: 1px;
-  border-top: 1px;
-}
-
-footer section.shop {
-  flex: auto;
-  margin: 0 10px;
-  border: 1px solid rgb(255, 255, 255);
-  max-width: 30%;
-  border-left: 1px;
-  border-bottom: 1px;
-  border-top: 1px;
-} 
-
-footer section img {
-  width: 100%; 
-  max-width: 220px; 
-}
-
-footer h1 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: white;
-}
-
-footer p {
-  margin: 5px 0;
-  font-size: 16px;
-  color: white;
-} */
-
-
-
-/* PRODUCTOOOOOOOSSSSS */
-
-
-section.cart {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px;
-  border: 1px solid black;
-  padding: 10px 0 10px;
-
-}
-
-section.cart p {
-  margin-left: 20px ;
-}
-
-section.cart a {
-  margin-right: 20px;
-  text-decoration: none;
-  color: rgb(255, 254, 254);
-  border: 1px solid black; 
-  background-color: black;
-  padding: 7px;
-}
-
-section.producto {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-section.producto img {
-  border: 1px solid black;
-  width: 350px;
-  margin-left: 29px;
-  margin-bottom: 20px;
-  margin-right: 20px;
-}
-
-section.nombre {
-  margin-right: 20px;
-  text-align: center;
-}
-
-
-section.cantidad {
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-section.cantidad p {
-  border: 1px solid black;
-  margin: 5px;
-  padding: 10px;
-}
-
-.nombre .hola {
-  border: 1px solid black;
-  padding: 7px 6px;
-  background-color: black;
-  color: white;
-  display: inline-block;
-  margin-top: 20px; /* Añade un margen superior para separar del resto del contenido */
-}
-
- /* CHECKOUUUUUUUUT */
- 
- body h1 {
-  margin-top: 20px;
- }
-
- body p {
-  margin-bottom: 20px;
- }
-
- body h1, body p {
-  text-align: center;  
- }
-
- section.formyeso {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #000000;
-  margin-bottom: 20px;
- }
-section.formyeso .boldeame {
-  font-weight: bolder;
-  text-align: left; /* Alinea el texto a la izquierda */
-  width: 100%; /* Asegura que el texto ocupe todo el ancho del contenedor */
-  margin-left: 0; /* Ajusta el margen izquierdo según sea necesario */
-  padding-left: 30px;
-  margin-bottom: 10px;
-}
-
-form {
-  width: 100%; /* ajusta el ancho del formulario segun sea necesario*/
-  margin-left: 30px; 
-  margin-bottom: 10px;
-}
-form input {
-  height: 40px; /* ajsuta el ancho de los inputs para que ocupen todo el espacio del forms */
-  width: 100%;
-  margin-bottom: 10px; /*añade un margen superior para separar los inputs */
-}
-
-section .itemscart .b2 {
-  border-bottom: 1px solid black;
-}
-
-section .itemscart {
-  margin-right: 40px;
-}
-
-section.back {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px;
-}
-
-.back p {
-  border: 1px solid black;
-  background-color: black;
-  color: white;
-  padding: 10px;
 }
