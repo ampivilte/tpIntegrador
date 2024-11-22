@@ -35,10 +35,10 @@ fetch("https://dummyjson.com/recipes")
     form.addEventListener("submit", (event) => {
       const searchTerm = searchInput.value.trim();
       if (searchTerm === "") {
-        event.preventDefault(); // Evita que se envíe el formulario
+        event.preventDefault(); 
         alert("El campo de búsqueda no puede estar vacío.");
       } else if (searchTerm.length <= 3) {
-        event.preventDefault(); // Evita que se envíe el formulario
+        event.preventDefault(); 
         alert("El término de búsqueda debe tener más de tres caracteres.");
       }
     });
