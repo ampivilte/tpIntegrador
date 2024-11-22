@@ -15,7 +15,7 @@ fetch("https://dummyjson.com/recipes")
 
     for (let i = 0; i < recipes.length; i++) {
       recipe += `
-                <article class="product">
+                <article class="receta">
                         <img src= ${recipes[i].image} alt='imagen_receta'>
                         <h1> ${recipes[i].name} </h1>
                         <p> Dificultad: ${recipes[i].difficulty} </p>

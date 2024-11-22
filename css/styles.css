@@ -92,21 +92,14 @@ article p {
 }
 
 /* RECETAS -------- */
-.products-section {
-  padding: 20px;
-  background-color: #F0EBE0;
-}
-
-.products-section h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-.products-section .description {
-  font-size: 1.1em;
-  color: #666;
+.titulo-principal {
+  color: white;
   margin-bottom: 30px;
+  background-color: #AAD1D7;
+
 }
+
+
 
 .products {
   display: flex;
@@ -115,12 +108,15 @@ article p {
   flex-wrap: wrap;
 }
 
-.product {
+.receta {
   text-align: center;
   max-width: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
 }
 
-.product img {
+.receta img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -128,22 +124,17 @@ article p {
   margin-bottom: 10px;
 }
 
-.product h2 {
+.receta h2 {
   font-size: 1.2em;
   margin: 10px 0 5px;
 }
 
-.product p {
+.receta p {
   font-size: 0.9em;
   color: #666;
   margin: 5px 0;
 }
 
-.product .price {
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #8b6b42;
-}
 
 /* FOOTER -------- */
 .footer {
