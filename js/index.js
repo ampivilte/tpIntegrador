@@ -7,10 +7,12 @@ fetch("https://dummyjson.com/recipes")
     let recipe = "";
     let recipeList = document.querySelector(".recipe-list");
 
+
+    let hola = "hola"
     recipeList.style.display = "flex"
     recipeList.style.flexWrap = "wrap"
     recipeList.style.justifyContent = "space-evenly"
-    
+
     for (let i = 0; i < recipes.length; i++) {
       recipe += `
                 <article class="product">
