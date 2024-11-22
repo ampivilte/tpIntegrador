@@ -32,10 +32,14 @@ fetch("https://dummyjson.com/recipes")
     const form = document.getElementById("searchForm");
     const searchInput = document.getElementById("searchInput");
 
-      form.addEventListener("submit", (event) => {
-          if (searchInput.value.trim() === "") {
-              event.preventDefault(); // Evita que se envíe el formulario
-              alert("El campo de búsqueda no puede estar vacío.");
-          }
-      });
+    form.addEventListener("submit", (event) => {
+      const searchTerm = searchInput.value.trim();
+      if (searchTerm === "") {
+        event.preventDefault(); // Evita que se envíe el formulario
+        alert("El campo de búsqueda no puede estar vacío.");
+      } else if (searchTerm.length <= 3) {
+        event.preventDefault(); // Evita que se envíe el formulario
+        alert("El término de búsqueda debe tener más de tres caracteres.");
+      }
+    });
   });
