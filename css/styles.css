@@ -36,7 +36,7 @@ header ul {
 }
 
 header li {
-  margin-left: 30px; /* Añade un margen entre los elementos si es necesario */
+  margin-left: 30px;
   list-style: none;
 }
 
@@ -131,9 +131,17 @@ article p {
   font-weight: normal;
 }
 
+.receta button {
+  width: 50px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #B2BF3C;
+  border-color: #B2BF3C;
+}
+
 .receta a {
   text-decoration: none;
-  
+  color: white;
 }
 
 
