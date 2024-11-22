@@ -27,3 +27,15 @@ fetch("https://dummyjson.com/recipes")
   .catch(function (error) {
     console.log("error: ", error);
   });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("searchForm");
+    const searchInput = document.getElementById("searchInput");
+
+      form.addEventListener("submit", (event) => {
+          if (searchInput.value.trim() === "") {
+              event.preventDefault(); // Evita que se envíe el formulario
+              alert("El campo de búsqueda no puede estar vacío.");
+          }
+      });
+  });
