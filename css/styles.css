@@ -120,14 +120,20 @@ article p {
 }
 
 .receta h2 {
-  font-size: 1.2em;
+  font-size: 20px;
   margin: 10px 0 5px;
 }
 
 .receta p {
-  font-size: 0.9em;
+  font-size: 15px;
   color: #666;
   margin: 5px 0;
+  font-weight: normal;
+}
+
+.receta a {
+  text-decoration: none;
+  
 }
 
 
