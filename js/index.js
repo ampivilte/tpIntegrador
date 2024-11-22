@@ -7,8 +7,6 @@ fetch("https://dummyjson.com/recipes")
     let recipe = "";
     let recipeList = document.querySelector(".recipe-list");
 
-
-    let hola = "hola"
     recipeList.style.display = "flex"
     recipeList.style.flexWrap = "wrap"
     recipeList.style.justifyContent = "center"
