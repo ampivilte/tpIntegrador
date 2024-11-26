@@ -8,25 +8,37 @@ fetch("https://dummyjson.com/recipes")
     let botonCargarMas = document.querySelector("#load-more");
     let imagenesPosibles = 10; 
 
-    
     recipeListContent.style.display = "flex";
     recipeListContent.style.flexWrap = "wrap";
     recipeListContent.style.justifyContent = "center";
 
-    
     const renderRecipes = (start, count) => {
-      let recipeHTML = "";
       for (let i = start; i < count && i < recipes.length; i++) {
-        recipeHTML += `
-          <article class="receta">
-            <img src="${recipes[i].image}" alt='imagen_receta'>
-            <h1>${recipes[i].name}</h1>
-            <p>Dificultad: ${recipes[i].difficulty}</p>
-            <button><a href="/recipes/${recipes[i].id}">Ver</a></button>
-          </article>
-        `;
+        let article = document.createElement("article");
+        article.classList.add("receta");
+
+        let img = document.createElement("img");
+        img.src = recipes[i].image;
+        img.alt = 'imagen_receta';
+        article.appendChild(img);
+
+        let h1 = document.createElement("h1");
+        h1.textContent = recipes[i].name;
+        article.appendChild(h1);
+
+        let p = document.createElement("p");
+        p.textContent = `Dificultad: ${recipes[i].difficulty}`;
+        article.appendChild(p);
+
+        let button = document.createElement("button");
+        let a = document.createElement("a");
+        a.href = `/recipes/${recipes[i].id}`;
+        a.textContent = "Ver";
+        button.appendChild(a);
+        article.appendChild(button);
+
+        recipeListContent.appendChild(article);
       }
-      recipeListContent.innerHTML += recipeHTML; 
     };
 
     
