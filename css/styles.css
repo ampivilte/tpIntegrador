@@ -222,3 +222,42 @@ article p {
 .box-registro p {
   font-size: 12px;
 }
+
+
+
+/* LOGIN -------- */
+.pag_login {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #E48A51;
+}
+
+.box-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; 
+  width: 500px;
+  height: 500px;
+  align-items: center;
+  background-color: white;
+  border-radius: 80px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.box-login img {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.box-login h1 {
+  color: #E48A51;
+  margin-bottom: 8px;
+}
+
+.box-login p {
+  font-size: 12px;
+}
