@@ -3,62 +3,52 @@ fetch("https://dummyjson.com/recipes")
     return response.json();
   })
   .then(function (data) {
-    let recipes = data.recipes;
+    let recetas = data.recipes;
     let recipeListContent = document.querySelector(".recipe-list-content");
     let botonCargarMas = document.querySelector("#load-more");
+    let recetasMostradas = 0;
     let imagenesPosibles = 10; 
 
     recipeListContent.style.display = "flex";
     recipeListContent.style.flexWrap = "wrap";
-    recipeListContent.style.justifyContent = "center";
+    recipeListContent.style.justifyContent = "space-around"; 
 
-    const renderRecipes = (start, count) => {
-      for (let i = start; i < count && i < recipes.length; i++) {
-        let article = document.createElement("article");
-        article.classList.add("receta");
-
-        let img = document.createElement("img");
-        img.src = recipes[i].image;
-        img.alt = 'imagen_receta';
-        article.appendChild(img);
-
-        let h1 = document.createElement("h1");
-        h1.textContent = recipes[i].name;
-        article.appendChild(h1);
-
-        let p = document.createElement("p");
-        p.textContent = `Dificultad: ${recipes[i].difficulty}`;
-        article.appendChild(p);
-
-        let button = document.createElement("button");
-        let a = document.createElement("a");
-        a.href = `/recipes/${recipes[i].id}`;
-        a.textContent = "Ver";
-        button.appendChild(a);
-        article.appendChild(button);
-
-        recipeListContent.appendChild(article);
+    function mostrarRecetas() {
+      let html = "";
+      for (let i = recetasMostradas; i < recetasMostradas + imagenesPosibles && i < recetas.length; i++) {
+        html += `
+          <article class="receta">
+            <img src="${recetas[i].image}" alt="imagen_receta">
+            <h1>${recetas[i].name}</h1>
+            <p>Dificultad: ${recetas[i].difficulty}</p>
+            <button>
+              <a href="/recetas/${recetas[i].id}">Ver</a>
+            </button>
+          </article>
+        `;
       }
-    };
+      recipeListContent.innerHTML += html;
+      recetasMostradas += imagenesPosibles;
 
-    
-    renderRecipes(0, imagenesPosibles);
-
-    
-    botonCargarMas.addEventListener("click", () => {
-      let cuentaActual = imagenesPosibles; 
-      imagenesPosibles += 10; 
-      renderRecipes(cuentaActual, imagenesPosibles);
-
-      
-      if (imagenesPosibles >= recipes.length) {
+      if (recetasMostradas >= recetas.length) {
         botonCargarMas.style.display = "none";
       }
+    }
+
+    mostrarRecetas();
+
+    botonCargarMas.addEventListener("click", function () {
+      mostrarRecetas();
     });
+
   })
+
   .catch(function (error) {
-    console.log("error: ", error);
+    console.log("Error: " + error);
   });
+
+
+
 
   document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("searchForm");
