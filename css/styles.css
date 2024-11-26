@@ -189,16 +189,36 @@ article p {
 /* REGISTRO -------- */
 .pag_registro {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  height: 100vh;
+  justify-content: center;
   align-items: center;
+  background-color: #AAD1D7;
+}
+
+.box-registro {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; 
+  width: 500px;
+  height: 500px;
+  align-items: center;
+  background-color: white;
+  border-radius: 80px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.box-registro img {
+  margin-top: 20px;
   margin-bottom: 10px;
-}
-
-.caja1 {
-
-}
-
-.caja1 img {
   width: 200px;
+}
+
+.box-registro h1 {
+  color: #B2BF3C;
+  margin-bottom: 8px;
+}
+
+.box-registro p {
+  font-size: 12px;
 }
