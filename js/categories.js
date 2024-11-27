@@ -17,7 +17,7 @@ fetch("https://dummyjson.com/recipes/tags")
 
     for (let i = 0; i < categories.length; i++) {
       categoria += `
-                <article>
+                <article class="categories">
                         <a href="./category.html?id=${categories[i].id}">${categories[i]}</a>
                  </article>
              `;

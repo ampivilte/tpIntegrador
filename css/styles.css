@@ -50,7 +50,7 @@ header a {
 }
 
 
-/* BANNER -------- */
+/* BANNER PRINCIPAL -------- */
 .banner_hp {
   display: flex;
   flex-wrap: wrap;
@@ -66,8 +66,8 @@ header a {
   padding-left: 20px;
 }
 
-article p {
-  font-size: 15px;
+.article_banner p {
+  font-size: 20px;
   color: #a5a5a5;
   font-weight: bold;
 }
@@ -155,6 +155,56 @@ article p {
   border-color: #B2BF3C;
   color: white;
 }
+
+/* CATEGORIES -------- */
+.banner_categories {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.logo_banner_categories {
+  height: 100px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+article p {
+  font-size: 15px;
+  color: #a5a5a5;
+  font-weight: bold;
+}
+
+.categories-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 300px;
+  height: auto;
+  padding: 20px 20px 20px 20px;
+  background-color: #D7DE9C;
+  margin: 10px 10px 10px 10px;
+  border-radius: 100px;
+}
+
+.categories a {
+  text-decoration: none;
+  color: #757e29;
+  font-weight: bold;
+}
+
 
 /* FOOTER -------- */
 .footer {
