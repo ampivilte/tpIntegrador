@@ -20,10 +20,25 @@
           <p>Hola de nuevo! Completá los campos<br> para ingresar a tu cuenta Foodie.</p>
           
           <form id="loginForm" action="home.html" method="GET" class="form-login">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Ingresa tu email">
+            <div id="emailError" style="color: red; font-size: 14px;"></div>
+            <br><br>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña">
+            <div id="passwordError" style="color: red; font-size: 14px;"></div>
+            <br><br>
+
+            <button type="submit">Iniciar sesión</button>
             
+            <p> <a href="register.html"> Regístrate aquí</a></p>
+          
           </form>
       </article>
-      
+
+      <script src="js/login.js"></script>
   </body>
 
 </html>
