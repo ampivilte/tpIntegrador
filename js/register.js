@@ -4,7 +4,6 @@ const contrasena = document.querySelector("#password");
 const termsConditions = document.querySelector("#terms");
 const emailError = document.querySelector("#emailError");
 const passwordError = document.querySelector("#passwordError");
-const termsError = document.querySelector("#termsError"); 
 
 formulario.addEventListener("submit", function (e) {
   let esValido = true;
@@ -24,10 +23,8 @@ formulario.addEventListener("submit", function (e) {
   }
 
   if (!termsConditions.checked) {
-    termsError.textContent = "Debe aceptar los términos y condiciones.";
+    alert("Debe aceptar los términos y condiciones.");
     esValido = false;
-  } else {
-    termsError.textContent = ""; 
   }
 
   if (!esValido) {
