@@ -21,21 +21,19 @@
           
           <form id="loginForm" action="home.html" method="GET" class="form-login">
 
-            <label for="email">Email:</label>
+            <label for="email" class="label-input">Email:</label>
             <input type="email" id="email" name="email" placeholder="Ingresa tu email">
             <div id="emailError" style="color: red; font-size: 14px;"></div>
-            <br><br>
 
-            <label for="password">Contraseña:</label>
+            <label for="password" class="label-input">Contraseña:</label>
             <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña">
             <div id="passwordError" style="color: red; font-size: 14px;"></div>
-            <br><br>
 
             <button type="submit">Iniciar sesión</button>
-            
-            <p> <a href="register.html"> Regístrate aquí</a></p>
-          
+
           </form>
+          <br>
+          <a href="register.html"><button type="submit" class="button-no-tengo-cuenta">No tengo cuenta</button></a>
       </article>
 
       <script src="js/login.js"></script>

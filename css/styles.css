@@ -86,7 +86,12 @@ header a {
 .form-busqueda input {
   width: 70vw;
   padding-left: 10px;
-  height: 40px;
+  height: 45px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
 }
 
 .form-busqueda article img {
@@ -142,9 +147,6 @@ header a {
 .receta a {
   text-decoration: none;
   color: white;
-}
-
-.recipe-list {
 }
 
 .boton_cargar_mas {
@@ -252,7 +254,7 @@ article p {
   justify-content: flex-start;
   align-items: center; 
   width: 500px;
-  height: 500px;
+  height: 550px;
   align-items: center;
   background-color: white;
   border-radius: 80px;
@@ -272,7 +274,41 @@ article p {
 
 .box-registro p {
   font-size: 12px;
+  margin-bottom: 20px;
 }
+
+.label-input {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: #999;
+  font-weight: bold;
+}
+
+.label-checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+}
+
+.form-registro input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form-registro button {
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #B2BF3C;
+  border-color: #B2BF3C;
+  color: white;
+}
+
 
 
 
@@ -288,10 +324,10 @@ article p {
 .box-login {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center; 
   width: 500px;
-  height: 500px;
+  height: 550px;
   align-items: center;
   background-color: white;
   border-radius: 80px;
@@ -311,4 +347,58 @@ article p {
 
 .box-login p {
   font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.label-input {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: #999;
+  font-weight: bold;
+}
+
+.label-checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+}
+
+.form-login input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form-login button {
+  display: block;
+  width: 120px;
+  height: 35px;
+  border: none;
+  border-radius: 20px;
+  background-color: #E48A51;
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 0 auto;
+}
+
+.box-login a {
+  text-decoration: none;
+}
+
+.button-no-tengo-cuenta {
+  display: block;
+  width: 120px;
+  height: 35px;
+  border: solid 2px #E48A51;
+  border-radius: 20px;
+  background-color: white;
+  color: #E48A51;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 0 auto;
 }
