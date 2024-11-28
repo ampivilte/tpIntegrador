@@ -289,10 +289,10 @@ article p {
   display: flex;
   align-items: center;
   font-size: 10px;
+  color: #999;
 }
 
 .form-registro input {
-  width: 100%;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ddd;
@@ -301,16 +301,34 @@ article p {
 }
 
 .form-registro button {
-  width: 100px;
-  height: 30px;
+  display: block;
+  width: 120px;
+  height: 35px;
+  border: none;
   border-radius: 20px;
-  background-color: #B2BF3C;
-  border-color: #B2BF3C;
+  background-color: #AAD1D7;
   color: white;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 0 auto;
 }
 
+.box-registro a {
+  text-decoration: none;
+}
 
-
+.button-ya-tengo-cuenta {
+  display: block;
+  width: 120px;
+  height: 35px;
+  border: solid 2px #AAD1D7;
+  border-radius: 20px;
+  background-color: white;
+  color: #AAD1D7;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 0 auto;
+}
 
 /* LOGIN -------- */
 .pag_login {

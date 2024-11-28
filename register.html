@@ -22,25 +22,22 @@
           <form id="registerForm" action="login.html" method="GET" class="form-registro">
             <label for="email" class="label-input">Email:</label>
             <input type="email" id="email" name="email">
-            <div id="emailError" style="color: red; font-size: 14px;"></div>
-            <br>
+            <div id="emailError" style="color: red; font-size: 10px;"></div>
           
             <label for="password" class="label-input">Contraseña:</label>
             <input type="password" id="password" name="password">
-            <div id="passwordError" style="color: red; font-size: 14px;"></div>
-            <br>
+            <div id="passwordError" style="color: red; font-size: 10px;"></div>
           
             <label class="label-checkbox">
               <input type="checkbox" id="terms">Acepto los términos y condiciones
             </label>
-            <div id="termsError" style="color: red; font-size: 14px;"></div>
+            <div id="termsError" style="color: red; font-size: 10px;"></div>
             <br>
 
             <button type="submit">Registrarse</button>          
           </form>
-
-
-          <p> <a href="login.html"> Ya tengo una cuenta </a></p>
+          <br>
+          <a href="login.html"><button type="submit" class="button-ya-tengo-cuenta">Ya tengo cuenta</button></a>    
       </article>
 
       <script src="js/register.js"></script>
