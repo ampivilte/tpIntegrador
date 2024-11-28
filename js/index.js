@@ -7,11 +7,11 @@ fetch("https://dummyjson.com/recipes")
     let recipeListContent = document.querySelector(".recipe-list-content");
     let botonCargarMas = document.querySelector("#load-more");
     let recetasMostradas = 0;
-    let imagenesPosibles = 10; 
+    let imagenesPosibles = 10;
 
     recipeListContent.style.display = "flex";
     recipeListContent.style.flexWrap = "wrap";
-    recipeListContent.style.justifyContent = "space-around"; 
+    recipeListContent.style.justifyContent = "space-around";
 
     function mostrarRecetas() {
       let html = "";
@@ -36,32 +36,24 @@ fetch("https://dummyjson.com/recipes")
     }
 
     mostrarRecetas();
-
     botonCargarMas.addEventListener("click", function () {
       mostrarRecetas();
     });
 
   })
+  
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("searchForm");
+  const buscador = document.getElementById("searchInput");
 
-  .catch(function (error) {
-    console.log("Error: " + error);
+  form.addEventListener("submit", (event) => {
+    const terminoBuscado = buscador.value.trim();
+    if (terminoBuscado === "") {
+      event.preventDefault();
+      alert("El campo de búsqueda no puede estar vacío.");
+    } else if (terminoBuscado.length <= 3) {
+      event.preventDefault();
+      alert("El término de búsqueda debe tener más de tres caracteres.");
+    }
   });
-
-
-
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById("searchForm");
-    const buscador = document.getElementById("searchInput");
-
-    form.addEventListener("submit", (event) => {
-      const terminoBuscado = buscador.value.trim();
-      if (terminoBuscado === "") {
-        event.preventDefault(); 
-        alert("El campo de búsqueda no puede estar vacío.");
-      } else if (terminoBuscado.length <= 3) {
-        event.preventDefault(); 
-        alert("El término de búsqueda debe tener más de tres caracteres.");
-      }
-    });
-  });
+});
