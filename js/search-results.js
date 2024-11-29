@@ -14,23 +14,25 @@ if (buscarTerm) {
       const recetas = data.recipes;
       if (recetas && recetas.length > 0) {
         let html = "";
-        recetas.forEach(function (recipe) {
+        
+        for (let i = 0; i < recetas.length; i++) {
           html += `
             <article style="border: 1px solid #ddd; padding: 10px; width: 200px; text-align: center;">
-              <img src="${recipe.image}" alt="${recipe.name}" style="width: 100%;">
-              <h2>${recipe.name}</h2>
-              <a href="receta.html?id=${recipe.id}" style="color: blue; text-decoration: underline;">Ver Detalle</a>
+              <img src="${recetas[i].image}" alt="${recetas[i].name}" style="width: 100%;">
+              <h2>${recetas[i].name}</h2>
+              <a href="receta.html?id=${recetas[i].id}" style="color: blue; text-decoration: underline;">Ver Detalle</a>
             </article>
           `;
-        });
+        }
 
-        resultadosContainer.innerHTML = html; 
+        resultadosContainer.innerHTML = html;
       } else {
         noResultadosMensaje.style.display = "block";
       }
     })
-    .catch(function (error) {
-      console.error("Error al realizar la búsqueda:", error);
+    .catch(function () {
+      noResultadosMensaje.style.display = "block";
+      noResultadosMensaje.textContent = "Hubo un error al realizar la búsqueda.";
     });
 } else {
   noResultadosMensaje.style.display = "block";
