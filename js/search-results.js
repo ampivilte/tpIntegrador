@@ -17,10 +17,10 @@ if (buscarTerm) {
         
         for (let i = 0; i < recetas.length; i++) {
           html += `
-            <article style="border: 1px solid #ddd; padding: 10px; width: 200px; text-align: center;">
+            <article class="resultados-busq">
               <img src="${recetas[i].image}" alt="${recetas[i].name}" style="width: 100%;">
-              <h2>${recetas[i].name}</h2>
-              <a href="receta.html?id=${recetas[i].id}" style="color: blue; text-decoration: underline;">Ver Detalle</a>
+              <h1>${recetas[i].name}</h1>
+              <button><a href="receta.html?id=${recetas[i].id}">Ver</a></button>
             </article>
           `;
         }
