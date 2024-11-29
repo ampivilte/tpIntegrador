@@ -41,12 +41,12 @@ fetch("https://dummyjson.com/recipes")
     });
 
   })
-  
-document.addEventListener("DOMContentLoaded", () => {
+
+document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("searchForm");
   const buscador = document.getElementById("searchInput");
 
-  form.addEventListener("submit", (event) => {
+  form.addEventListener("submit", function (event) {
     const terminoBuscado = buscador.value.trim();
     if (terminoBuscado === "") {
       event.preventDefault();
