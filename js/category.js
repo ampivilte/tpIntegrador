@@ -37,3 +37,19 @@ if (tag) {
   noRecetasMensajes.style.display = "block";
   noRecetasMensajes.textContent = "Por favor, selecciona una categoría válida.";
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("searchForm");
+    const buscador = document.getElementById("searchInput");
+  
+    form.addEventListener("submit", (event) => {
+      const terminoBuscado = buscador.value.trim();
+      if (terminoBuscado === "") {
+        event.preventDefault();
+        alert("El campo de búsqueda no puede estar vacío.");
+      } else if (terminoBuscado.length <= 3) {
+        event.preventDefault();
+        alert("El término de búsqueda debe tener más de tres caracteres.");
+      }
+    });
+  });
