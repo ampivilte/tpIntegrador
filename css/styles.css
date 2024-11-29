@@ -406,7 +406,7 @@ article p {
   width: 100%;
 }
 
-.form-registro input {
+.form-registro .input-registro {
   width: 40vh;
   padding: 10px;
   margin-bottom: 15px;

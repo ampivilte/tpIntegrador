@@ -15,22 +15,22 @@
 
   <body class="pag_registro">
       <article class="box-registro">
-          <a href="home.html"><img src="/logos-iconos/foody_logo.png" alt="logo"></a>
+          <a href="home.html"><img src="logos-iconos/foody_logo.png" alt="logo"></a>
           <h1>Register here</h1>
           <p>Completa los campos con tu información personal<br>para formar parte de nuestra comunidad.</p>
           
           <form id="registerForm" action="login.html" method="GET" class="form-registro">
             
             <label for="email" class="label-input">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Ingresa tu email">
+            <input class="input-registro" type="email" id="email" name="email" placeholder="Ingresa tu email">
             <div id="emailError" style="color: red; font-size: 10px;"></div>
           
             <label for="password" class="label-input">Contraseña:</label>
-            <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña">
+            <input class="input-registro" type="password" id="password" name="password" placeholder="Ingresa tu contraseña">
             <div id="passwordError" style="color: red; font-size: 10px;"></div>
           
             <label class="label-checkbox">
-              <input type="checkbox" id="terms">Acepto los términos y condiciones
+              <input type="checkbox" id="terms" class="terminos">Acepto los términos y condiciones
             </label>
             <div id="termsError" style="color: red; font-size: 10px;"></div>
             <br>
