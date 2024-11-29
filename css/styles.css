@@ -6,7 +6,6 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
@@ -127,6 +126,7 @@ header a {
 
 .receta h1 {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .receta p {
@@ -134,14 +134,17 @@ header a {
   color: #666;
   margin: 5px 0;
   font-weight: normal;
+  margin-bottom: 10px;
 }
 
 .receta button {
   width: 50px;
   height: 30px;
+  border: none;
   border-radius: 20px;
   background-color: #B2BF3C;
-  border-color: #B2BF3C;
+  font-weight: bold;
+  font-size: 13px;
 }
 
 .receta a {
@@ -150,12 +153,15 @@ header a {
 }
 
 .boton_cargar_mas {
-  width: 100px;
-  height: 30px;
+  width: 150px;
+  height: 50px;
+  border: none;
   border-radius: 20px;
-  background-color: #B2BF3C;
-  border-color: #B2BF3C;
+  background-color: #f18847;
   color: white;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 17px;
 }
 
 /* CATEGORIES -------- */
@@ -207,6 +213,60 @@ article p {
   font-weight: bold;
 }
 
+/* CATEGORIA INDIVIDUAL -------- */
+.h1-category {
+  text-align: center;
+  color: #f18847;
+  margin-bottom: 30px;
+}
+
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px; /* Espaciado entre las recetas */
+  margin: 20px auto; /* Centra el contenedor */
+  padding: 0 10px;
+}
+
+.receta-category {
+  text-align: center;
+  width: 18%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+.receta-category img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 5px solid #AAD1D7;
+}
+
+.receta-category h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.receta-category button {
+  width: 50px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  background-color: #B2BF3C;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.receta-category a {
+  text-decoration: none;
+  color: white;
+}
+
 
 /* FOOTER -------- */
 .footer {
@@ -251,7 +311,7 @@ article p {
 .box-registro {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center; 
   width: 500px;
   height: 550px;
@@ -287,17 +347,26 @@ article p {
 
 .label-checkbox {
   display: flex;
+  justify-content: center;
   align-items: center;
   font-size: 10px;
   color: #999;
 }
 
+.form-registro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 .form-registro input {
+  width: 40vh;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 11px;
 }
 
 .form-registro button {
@@ -370,6 +439,7 @@ article p {
 
 .label-input {
   display: block;
+  width: 40vh;
   font-size: 15px;
   margin-bottom: 5px;
   color: #999;
@@ -388,7 +458,7 @@ article p {
   margin-bottom: 15px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 11px;
 }
 
 .form-login button {

@@ -18,10 +18,10 @@ if (tag) {
 
         recetas.forEach(function (recipe) {
           html += `
-            <article style="border: 1px solid #ddd; padding: 10px; width: 200px; text-align: center;">
-              <img src="${recipe.image}" alt="${recipe.name}" style="width: 100%;">
-              <h2>${recipe.name}</h2>
-              <a href="receta.html?id=${recipe.id}" style="color: blue; text-decoration: underline;">Ver Detalle</a>
+            <article class="receta-category">
+              <img src="${recipe.image}" alt="${recipe.name}">
+              <h1>${recipe.name}</h1>
+              <button><a href="receta.html?id=${recipe.id}">Ver</a></button>
             </article>
           `;
         });
