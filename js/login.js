@@ -7,19 +7,15 @@ const passwordError = document.querySelector("#passwordError");
 formulario.addEventListener("submit", function (e) {
   let esValido = true;
 
-  if (email.value.trim() === "") {
-    emailError.textContent = "Por favor complete el campo.";
+if (email.value.trim() === "") {
+    alert("Por favor complete el campo email.");
     esValido = false;
-  } else {
-    emailError.textContent = ""; 
-  }
+}
 
-  if (contrasena.value.trim() === "") {
-    passwordError.textContent = "Por favor complete el campo.";
+if (contrasena.value.trim() === "") {
+    alert("Por favor complete el campo contraseña.");
     esValido = false;
-  } else {
-    passwordError.textContent = ""; 
-  }
+}
 
   if (!esValido) {
     e.preventDefault();
