@@ -15,13 +15,13 @@ if (recetasId) {
       const categorias = document.querySelector(".categorias");
 
       nombre.innerHTML = data.name;
-      instrucciones.innerHTML = `Instrucciones: ${data.instructions}`;
-      tiempo.innerHTML = `Tiempo de cocción: ${data.cookTimeMinutes || "No especificado"} minutos`;
+      instrucciones.innerHTML = `<span class="span-receta-ind-2">Instrucciones:</span> <br> ${data.instructions}`;
+      tiempo.innerHTML = `<span class="span-receta-ind-1">Tiempo de cocción:</span> <br> ${data.cookTimeMinutes || "No especificado"} minutos`;
       foto.src = data.image;
       foto.alt = data.name;
 
       if (data.tags && data.tags.length > 0) {
-        categorias.innerHTML = `Categorías: ${data.tags.join(", ")}`;
+        categorias.innerHTML = `<span class="span-receta-ind-3">Categorías:</span> <br> ${data.tags.join(", ")}`;
       } else {
         categorias.innerHTML = "Categorías: No especificadas";
       }
