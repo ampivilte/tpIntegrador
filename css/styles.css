@@ -587,3 +587,611 @@ article p {
   text-decoration: none;
   color: white;
 }
+
+
+
+
+@media (max-width: 320px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* HEADER -------- */
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center; 
+    height: 225px;
+    background-color: white;
+    padding: 20px 20px;
+    margin-bottom: 10px;
+    border: #AAD1D7 solid 5px;
+  }
+  
+  header .logo {
+    width: 120px;
+    padding-top: 5px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+  
+  header ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header li {
+    margin-left: 0px;
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .icono-casa {
+    width: 20px;
+  }
+  
+  
+  /* BANNER PRINCIPAL -------- */
+  .banner_hp {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  
+  .logo_banner {
+    display: none;
+    height: 200px;
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+  
+  .article_banner p {
+    font-size: 20px;
+    color: #a5a5a5;
+    font-weight: bold;
+  }
+  
+  
+  /* FORMULARIO DE BÚSQUEDA -------- */
+  .form-busqueda {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  
+  .form-busqueda input {
+    width: 70vw;
+    padding-left: 10px;
+    height: 45px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  
+  .form-busqueda article img {
+    width: 25px;
+    padding-right: 5px;
+  }
+  
+  /* RECETAS -------- */
+  .titulo-principal {
+    color: #f18847;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  .receta {
+    text-align: center;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .receta img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 5px solid #AAD1D7;
+  }
+  
+  .receta h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .receta p {
+    font-size: 15px;
+    color: #666;
+    margin: 5px 0;
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
+  
+  .receta button {
+    width: 50px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: #B2BF3C;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  
+  .receta a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .boton_cargar_mas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f18847;
+    color: white;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 17px;
+  }
+  
+  /* RECETA INDIVIDUAL -------- */
+  .recetas-ind {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .recetas-ind article {
+    width: 50%;
+  }
+  
+  .recetas-ind img {
+    width: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    margin-right: 0;
+    border: 5px solid #AAD1D7;
+  }
+  
+  .recetas-ind h1 {
+    color: #f18847;
+    font-size: 25px;
+    margin-bottom: 40px;
+    text-decoration: underline;
+    text-align: center;
+  }
+  
+  .recetas-ind p {
+    text-align: center;
+    font-weight: normal;
+    color: black;
+    margin-bottom: 20px;
+
+  }
+  
+  .span-receta-ind-1 {
+    text-align: center;
+    font-weight: bold;
+    color: #B1BE3C;
+    font-size: 17px;
+  }
+  
+  .span-receta-ind-2 {
+    text-align: center;
+    font-weight: bold;
+    color: #AAD1D7;
+    font-size: 17px;
+  }
+  
+  .span-receta-ind-3 {
+    text-align: center;
+    font-weight: bold;
+    color: #F3C74B;
+    font-size: 17px;
+  }
+  
+  
+  /* CATEGORIES -------- */
+  .banner_categories {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  
+  .logo_banner_categories {
+    display: none;
+    height: 100px;
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+  
+  article p {
+    font-size: 15px;
+    color: #a5a5a5;
+    font-weight: bold;
+  }
+  
+  .categories-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+    background-color: #D7DE9C;
+    margin: 10px 10px 10px 10px;
+    border-radius: 100px;
+  }
+  
+  .categories a {
+    text-decoration: none;
+    color: #757e29;
+    font-weight: bold;
+  }
+  
+  /* CATEGORIA INDIVIDUAL -------- */
+  .h1-category {
+    text-align: center;
+    color: #f18847;
+    margin-bottom: 30px;
+  }
+  
+  .receta-category {
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+  
+  .receta-category img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 5px solid #AAD1D7;
+  }
+  
+  .receta-category h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .receta-category button {
+    width: 50px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: #B2BF3C;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  
+  .receta-category a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  
+  /* FOOTER -------- */
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #f18847;
+  }
+  
+  .footer article img {
+    width: 120px;
+  }
+  
+  .footer article h1 {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .footer article p {
+    color: white;
+    text-align: left;
+    font-weight: normal;
+  }
+  
+  .footer article ul li {
+    color: white;
+    text-align: left;
+  }
+  
+  
+  /* REGISTRO -------- */
+  .pag_registro {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #AAD1D7;
+  }
+  
+  .box-registro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 300px;
+    height: 550px;
+    align-items: center;
+    background-color: white;
+    border-radius: 80px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .box-registro img {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 200px;
+  }
+  
+  .box-registro h1 {
+    color: #B2BF3C;
+    margin-bottom: 8px;
+  }
+  
+  .box-registro p {
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .label-input {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #999;
+    font-weight: bold;
+  }
+  
+  .label-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: #999;
+  }
+  
+  .form-registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .form-registro .input-registro {
+    width: 40vh;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 11px;
+  }
+  
+  .form-registro button {
+    display: block;
+    width: 120px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    background-color: #AAD1D7;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 0 auto;
+  }
+  
+  .box-registro a {
+    text-decoration: none;
+  }
+  
+  .button-ya-tengo-cuenta {
+    display: block;
+    width: 120px;
+    height: 35px;
+    border: solid 2px #AAD1D7;
+    border-radius: 20px;
+    background-color: white;
+    color: #AAD1D7;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0 auto;
+  }
+  
+  /* LOGIN -------- */
+  .pag_login {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #E48A51;
+  }
+  
+  .box-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 300px;
+    height: 550px;
+    align-items: center;
+    background-color: white;
+    border-radius: 80px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .box-login img {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 200px;
+  }
+  
+  .box-login h1 {
+    color: #E48A51;
+    margin-bottom: 8px;
+  }
+  
+  .box-login p {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .label-input {
+    display: block;
+    width: 40vh;
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #999;
+    font-weight: bold;
+  }
+  
+  .label-checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+  }
+  
+  .form-login input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 11px;
+  }
+  
+  .form-login button {
+    display: block;
+    width: 120px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    background-color: #E48A51;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 0 auto;
+  }
+  
+  .box-login a {
+    text-decoration: none;
+  }
+  
+  .button-no-tengo-cuenta {
+    display: block;
+    width: 120px;
+    height: 35px;
+    border: solid 2px #E48A51;
+    border-radius: 20px;
+    background-color: white;
+    color: #E48A51;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0 auto;
+  }
+  
+  /* RESULTADOS BÚSQUEDA -------- */
+  .search-results-h1 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #f18847;
+  }
+  
+  .search-results-p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .resultados-busq {
+    text-align: center;
+    width: 80%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .resultados-busq img {
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 5px solid #AAD1D7;
+  }
+  
+  .resultados-busq h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .resultados-busq button {
+    width: 50px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: #B2BF3C;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  
+  .resultados-busq a {
+    text-decoration: none;
+    color: white;
+  }
+  
+}
