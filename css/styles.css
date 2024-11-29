@@ -152,6 +152,10 @@ header a {
 }
 
 .boton_cargar_mas {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
   width: 150px;
   height: 50px;
   border: none;
